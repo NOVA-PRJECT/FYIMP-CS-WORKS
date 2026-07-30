@@ -1,0 +1,47 @@
+# C / C++ Compiled Output & Binaries
+*.exe
+*.out
+*.app
+a.exe
+a.out
+*.o
+*.obj
+*.o.d
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.pdb
+*.ilk
+*.idb
+*.dSYM/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# Web / Node.js
+node_modules/
+dist/
+build/
+.next/
+
+# IDEs & System Files
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+Desktop.ini
+.DS_Store
