@@ -5,7 +5,7 @@
 [![Programme](https://img.shields.io/badge/Programme-FYIMP%20CS-green.svg)]()
 [![Languages](https://img.shields.io/badge/Languages-C%20%7C%20C%2B%2B%20%7C%20Java%20%7C%20Python%20%7C%20Web-blueviolet.svg)]()
 
-Welcome to **FYIMP-CS-WORKS**, the comprehensive code and resource repository for students pursuing the **Four-Year Integrated Major Programme (FYIMP) / FYUGP in Computer Science** at the **Department of Information Technology, Kannur University**.
+Welcome to **FYIMP-CS-WORKS**, the comprehensive code and resource repository for students pursuing the **Five-Year Integrated Masters Programme (FYIMP) Computational Science** at the **Department of Information Technology, Kannur University**.
 
 This repository is designed to host **all practical lab programs, assignments, mini-projects, and worksheets** across all semesters and programming paradigms throughout the FYIMP CS curriculum.
 
