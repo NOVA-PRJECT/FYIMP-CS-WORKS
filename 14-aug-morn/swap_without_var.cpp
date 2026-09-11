@@ -3,18 +3,16 @@ using namespace std;
 
 int main()
 {
-    int a, b;
-    cout << "Enter value for A: ";
-    cin >> a;
-    cout << "Enter value for B: ";
-    cin >> b;
-    cout << "Values before swap:\nA = " << a << "\tB = " << b << endl;
+    int a=5, b=10;
 
-    a = a + b;         
-    b = a - b;
-    a = a - b;
-    
-    cout << "Values after swap:\nA = " << a << "\tB = " << b << endl;
+    cout << "Before swap: \n a = " << a << "\n b = " << b<<endl;
+
+    a=a+b;
+    b=a-b;
+    a=a-b;
+
+    cout << "After swap: \n a = " << a << "\n b = " << b<<endl;
+
 
     return 0;
 }
