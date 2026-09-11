@@ -6,25 +6,17 @@ int main() {
     cout << "Enter two integers: ";
     cin >> a >> b;
 
-    // Arithmetic operators
-    cout << "\n--- Arithmetic ---" << endl;
-    cout << "a + b = " << a + b << endl;
-    cout << "a - b = " << a - b << endl;
-    cout << "a * b = " << a * b << endl;
-    cout << "a / b = " << a / b << endl;
-    cout << "a % b = " << a % b << endl;
-
-    // Relational/Logical operators
-    cout << "\n--- Relational & Logical ---" << endl;
-    cout << "a > b  : " << (a > b) << endl;
-    cout << "a < b  : " << (a < b) << endl;
-    cout << "a == b : " << (a == b) << endl;
-    cout << "a != b : " << (a != b) << endl;
-    cout << "a >= b : " << (a >= b) << endl;
-    cout << "a <= b : " << (a <= b) << endl;
-
-    // Truth value of (a>b && a!=0)
-    cout << "\n--- Truth Value ---" << endl;
+    cout << "Add :" << a + b << endl;
+    cout << "Sub :" << a - b << endl;
+    cout << "Div :" << a / b << endl;
+    cout << "Multi :" << a * b << endl;
+    cout << "Mod :" << a % b << endl;
+    cout << "Greater :" << (a > b) << endl;
+    cout << "Lesser :" << (a < b) << endl;
+    cout << "a == b :" << (a == b) << endl;
+    cout << "a != b :" << (a != b) << endl;
+    cout << "a >= b :" << (a >= b) << endl;
+    cout << "a <= b :" << (a <= b) << endl;
     cout << "(a>b && a!=0) : " << (a > b && a != 0) << endl;
 
     return 0;
