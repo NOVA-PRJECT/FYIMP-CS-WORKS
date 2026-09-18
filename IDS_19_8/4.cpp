@@ -3,25 +3,21 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int n;
-    cout << "Enter the total count of numbers (N): ";
+int main() { int n;
+    cout << "Enter total numbers : ";
     cin >> n;
 
-    int arr[n];
-    cout << "Enter " << n << " numbers:" << endl;
-    
-    for(int i = 0; i < n; i++){
-        cin >> arr[i];
-    }   
-                 
-    int sum = 0;
+    int arr[n],sum=0;
+    cout << "Enter " << n << " numbers:";
+
     for (int i = 0; i < n; i++) {
+        cin >> arr[i];
         sum += arr[i];
     }
 
-    int average = sum / n;
-    cout << "Average of the numbers: " << average << endl;
+
+    int avg = sum / n;
+    cout << "Average = " << avg << endl;
 
     return 0;
 }

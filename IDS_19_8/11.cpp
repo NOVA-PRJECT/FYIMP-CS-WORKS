@@ -6,27 +6,27 @@ using namespace std;
 int main() {
     int m, n;
 
-    cout << "Enter number of rows (m): ";
-    cin >> m;
-    cout << "Enter number of columns (n): ";
-    cin >> n;
+    cout << "Enter row and column \n";
+    cin>>m>>n;
+
 
     int matrix[m][n];
 
-    cout << "Enter elements of the matrix (" << m << "x" << n << "):" << endl;
+    cout << "Enter elements \n";
+
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
             cin >> matrix[i][j];
         }
     }
 
-    cout << "\nMatrix elements and their memory addresses:" << endl;
+    cout << "Matrix of size "<<m<<"x"<<n<<" is\n";
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
-            cout << "Element [" << i << "][" << j << "] = " << matrix[i][j] 
-                 << "  |  Address = " << &matrix[i][j] << endl;
+            cout << matrix[i][j];}
+            cout<<endl;
         }
-    }
+    
 
     return 0;
 }

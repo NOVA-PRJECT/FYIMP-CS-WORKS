@@ -6,35 +6,30 @@ using namespace std;
 int main() {
     int n1, n2;
 
-    cout << "Enter size of first array: ";
-    cin >> n1;
-    int arr1[n1];
-    cout << "Enter elements of first array:" << endl;
-    for (int i = 0; i < n1; i++) {
-        cin >> arr1[i];
-    }
+    cout << "Enter size of both : ";
+    cin >> n1>>n2 ;
+    int ar1[n1],ar2[n2];
+    cout << "Enter first :";
+    for (int i = 0; i < n1; i++) { cin>>ar1[i];}
 
-    cout << "Enter size of second array: ";
-    cin >> n2;
-    int arr2[n2];
-    cout << "Enter elements of second array:" << endl;
+    cout << "Enter second : ";
     for (int i = 0; i < n2; i++) {
-        cin >> arr2[i];
+        cin >> ar2[i];
     }
 
     int merged[n1 + n2];
 
     // Copy first array
     for (int i = 0; i < n1; i++) {
-        merged[i] = arr1[i];
+        merged[i] = ar1[i];
     }
 
     // Copy second array
     for (int i = 0; i < n2; i++) {
-        merged[n1 + i] = arr2[i];
+        merged[n1 + i] = ar2[i];
     }
 
-    cout << "\nMerged array:" << endl;
+    cout << "Merged array:" << endl;
     for (int i = 0; i < n1 + n2; i++) {
         cout << merged[i] << " ";
     }

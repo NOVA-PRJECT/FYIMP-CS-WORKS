@@ -4,36 +4,36 @@
 using namespace std;
 
 // Recursive function for factorial
-int factorial(int n) {
+int fact(int n) {
     if (n <= 1) {
         return 1;
     }
-    return n * factorial(n - 1);
+    return n * fact(n - 1);
 }
 
 // Recursive function for nth Fibonacci term
-int fibonacci(int n) {
+int fib(int n) {
     if (n <= 0) {
         return 0;
     }
     if (n == 1) {
         return 1;
     }
-    return fibonacci(n - 1) + fibonacci(n - 2);
+    return fib(n - 1) + fib(n - 2);
 }
 
 int main() {
     int num, terms;
 
-    cout << "Enter a number to find its factorial: ";
+    cout << "Enter a number for factorial: ";
     cin >> num;
-    cout << "Factorial of " << num << " is: " << factorial(num) << endl;
+    cout << "Factorial = " << fact(num);
 
-    cout << "\nEnter number of terms for Fibonacci series: ";
+    cout << "\nEnter number of fibinocci terms : ";
     cin >> terms;
-    cout << "Fibonacci series up to " << terms << " terms:" << endl;
+    cout << "Fibonacci series : \n";
     for (int i = 0; i < terms; i++) {
-        cout << fibonacci(i) << " ";
+        cout << fib(i) << " ";
     }
     cout << endl;
 
