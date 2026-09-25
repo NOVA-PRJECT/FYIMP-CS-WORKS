@@ -5,11 +5,11 @@ using namespace std;
 
 int main() {
     int n;
-    cout << "Enter number of elements: ";
+    cout << "Enter total N ";
     cin >> n;
 
     int arr[n];
-    cout << "Enter " << n << " elements:" << endl;
+    cout << "Enter elements "<< endl;
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
@@ -21,7 +21,7 @@ int main() {
         }
     }
 
-    cout << "Minimum element is: " << min << endl;
+    cout << "Min is : " << min << endl;
 
     return 0;
 }

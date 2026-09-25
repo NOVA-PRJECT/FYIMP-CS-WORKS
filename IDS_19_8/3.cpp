@@ -5,11 +5,11 @@ using namespace std;
 
 int main() {
     int n;
-    cout << "Enter number of elements: ";
+    cout << "Enter total N: ";
     cin >> n;
 
     int arr[n];
-    cout << "Enter " << n << " elements:" << endl;
+    cout << "Enter elements : ";
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
@@ -26,8 +26,8 @@ int main() {
         }
     }
 
-    cout << "highest element: " << high << endl;
-    cout << "lowest element: " << low << endl;
+    cout << "Max: " << high << endl;
+    cout << "Min: " << low << endl;
 
     return 0;
 }
