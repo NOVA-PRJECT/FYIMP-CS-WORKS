@@ -1,4 +1,4 @@
-// 2. write a program to find the minimum of set of 'n' elements
+// 2. write a program to find the minimum of set of 'n' elements  DONE
 
 #include <iostream>
 using namespace std;

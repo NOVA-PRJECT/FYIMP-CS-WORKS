@@ -1,4 +1,4 @@
-// 1. write a program to find the minimum of a set of 10 numbers
+// 1. write a program to find the minimum of a set of 10 numbers  DONE 
 
 #include <iostream>
 using namespace std;

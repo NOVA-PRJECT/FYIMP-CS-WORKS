@@ -1,4 +1,4 @@
-// 16. write a program to read a paragraph and count the number of capital letters, small letters, numbers and special character
+// 16. write a program to read a paragraph and count the number of capital letters, small letters, numbers and special character DONE
 
 #include <iostream>
 #include <string>

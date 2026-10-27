@@ -1,4 +1,4 @@
-// 21. write a program for implementing linear search
+// 21. write a program for implementing linear search  DONE 
 
 #include <iostream>
 using namespace std;

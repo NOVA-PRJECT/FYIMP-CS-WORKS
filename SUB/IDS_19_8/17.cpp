@@ -1,4 +1,4 @@
-// 17. program to check a string is palindrome or not
+// 17. program to check a string is palindrome or not  DONE 
 
 #include <iostream>
 #include <string>

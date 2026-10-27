@@ -1,4 +1,4 @@
-// 19. write a program to find factorial and fibonacci using recursion
+// 19. write a program to find factorial and fibonacci using recursion   DONE
 
 #include <iostream>
 using namespace std;
@@ -11,7 +11,7 @@ int fact(int n) {
     return n * fact(n - 1);
 }
 
-// Recursive function for nth Fibonacci term
+// Recursive function for nth Fibonacci term   
 int fib(int n) {
     if (n <= 0) {
         return 0;

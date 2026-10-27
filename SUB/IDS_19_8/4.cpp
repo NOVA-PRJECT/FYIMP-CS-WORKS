@@ -1,4 +1,4 @@
-// 4. write a program to find average of N numbers
+// 4. write a program to find average of N numbers   DONE
 
 #include <iostream>
 using namespace std;

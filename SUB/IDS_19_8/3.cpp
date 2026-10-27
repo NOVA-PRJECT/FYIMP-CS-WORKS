@@ -1,4 +1,4 @@
-// 3. write a program to print highest and low element from n number of elements
+// 3. write a program to print highest and low element from n number of elements  DONE
 
 #include <iostream>
 using namespace std;

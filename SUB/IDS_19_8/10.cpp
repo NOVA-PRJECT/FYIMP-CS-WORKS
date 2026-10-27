@@ -1,4 +1,4 @@
-// 10. write a program to merge two arrays
+// 10. write a program to merge two arrays  DONE
 
 #include <iostream>
 using namespace std;
