@@ -1,24 +1,44 @@
 {
+  // ── Global: disable all AI / ghost-text / snippet completions ──
+  "editor.inlineSuggest.enabled": false,
+  "editor.snippetSuggestions": "none",
+  "editor.suggest.showSnippets": false,
+  "editor.suggest.preview": false,
+  "editor.suggest.showWords": false,
+  "editor.codeLens": false,
+  "editor.parameterHints.enabled": true,
+
+  // Disable GitHub Copilot for this workspace (if extension is installed)
+  "github.copilot.enable": {
+    "*": false,
+    "cpp": false,
+    "c": false
+  },
+
+  // ── C++ specific ──
   "[cpp]": {
     "editor.inlineSuggest.enabled": false,
-    "editor.snippetSuggestions": "bottom",
+    "editor.snippetSuggestions": "none",
+    "editor.suggest.showSnippets": false,
     "editor.quickSuggestions": {
       "other": "on",
       "comments": "off",
       "strings": "off"
     },
-    "editor.wordBasedSuggestions": "matchingDocuments",
+    "editor.wordBasedSuggestions": "off",
     "editor.suggestOnTriggerCharacters": true
   },
+  // ── C specific ──
   "[c]": {
     "editor.inlineSuggest.enabled": false,
-    "editor.snippetSuggestions": "bottom",
+    "editor.snippetSuggestions": "none",
+    "editor.suggest.showSnippets": false,
     "editor.quickSuggestions": {
       "other": "on",
       "comments": "off",
       "strings": "off"
     },
-    "editor.wordBasedSuggestions": "matchingDocuments",
+    "editor.wordBasedSuggestions": "off",
     "editor.suggestOnTriggerCharacters": true
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
