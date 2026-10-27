@@ -38,7 +38,7 @@ build/
 .next/
 
 # IDEs & System Files
-.vscode/
+
 .idea/
 *.swp
 *.swo
