@@ -1,45 +1,52 @@
 {
-  // ── Global: disable all AI / ghost-text / snippet completions ──
-  "editor.inlineSuggest.enabled": false,
-  "editor.snippetSuggestions": "none",
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.quickSuggestions": {
+    "other": "off",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.wordBasedSuggestions": "off",
   "editor.suggest.showSnippets": false,
-  "editor.suggest.preview": false,
   "editor.suggest.showWords": false,
+  "editor.suggest.showKeywords": false,
+  "editor.suggest.showFunctions": false,
+  "editor.suggest.showVariables": false,
+  "editor.suggest.showClasses": false,
+  "editor.suggest.showInterfaces": false,
+  "editor.suggest.showModules": false,
+  "editor.suggest.showProperties": false,
+  "editor.suggest.showEvents": false,
+  "editor.suggest.showOperators": false,
+  "editor.suggest.showUnits": false,
+  "editor.suggest.showValues": false,
+  "editor.suggest.showConstants": false,
+  "editor.suggest.showEnums": false,
+  "editor.suggest.showEnumMembers": false,
+  "editor.suggest.showStructs": false,
+  "editor.suggest.showTypeParameters": false,
+  "editor.suggest.showMethods": false,
+  "editor.suggest.showConstructors": false,
+  "editor.suggest.showFields": false,
+  "editor.suggest.showColors": false,
+  "editor.suggest.showFiles": false,
+  "editor.suggest.showReferences": false,
+  "editor.suggest.showFolders": false,
+  "editor.suggest.preview": false,
+  "editor.snippetSuggestions": "none",
+  "editor.inlineSuggest.enabled": false,
+  "editor.parameterHints.enabled": false,
+  "editor.hover.enabled": false,
   "editor.codeLens": false,
-  "editor.parameterHints.enabled": true,
-
-  // Disable GitHub Copilot for this workspace (if extension is installed)
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.tabCompletion": "off",
+  "C_Cpp.autocomplete": "disabled",
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "C_Cpp.errorSquiggles": "disabled",
   "github.copilot.enable": {
     "*": false,
     "cpp": false,
     "c": false
-  },
-
-  // ── C++ specific ──
-  "[cpp]": {
-    "editor.inlineSuggest.enabled": false,
-    "editor.snippetSuggestions": "none",
-    "editor.suggest.showSnippets": false,
-    "editor.quickSuggestions": {
-      "other": "on",
-      "comments": "off",
-      "strings": "off"
-    },
-    "editor.wordBasedSuggestions": "off",
-    "editor.suggestOnTriggerCharacters": true
-  },
-  // ── C specific ──
-  "[c]": {
-    "editor.inlineSuggest.enabled": false,
-    "editor.snippetSuggestions": "none",
-    "editor.suggest.showSnippets": false,
-    "editor.quickSuggestions": {
-      "other": "on",
-      "comments": "off",
-      "strings": "off"
-    },
-    "editor.wordBasedSuggestions": "off",
-    "editor.suggestOnTriggerCharacters": true
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
@@ -49,48 +56,25 @@
   "C_Cpp_Runner.msvcBatchPath": "C:/Program Files/Microsoft Visual Studio/VR_NR/Community/VC/Auxiliary/Build/vcvarsall.bat",
   "C_Cpp_Runner.useMsvc": false,
   "C_Cpp_Runner.warnings": [
-    "-Wall",
-    "-Wextra",
-    "-Wpedantic",
-    "-Wshadow",
-    "-Wformat=2",
-    "-Wcast-align",
-    "-Wconversion",
-    "-Wsign-conversion",
-    "-Wnull-dereference"
+    "-Wall", "-Wextra", "-Wpedantic", "-Wshadow",
+    "-Wformat=2", "-Wcast-align", "-Wconversion",
+    "-Wsign-conversion", "-Wnull-dereference"
   ],
   "C_Cpp_Runner.msvcWarnings": [
-    "/W4",
-    "/permissive-",
-    "/w14242",
-    "/w14287",
-    "/w14296",
-    "/w14311",
-    "/w14826",
-    "/w44062",
-    "/w44242",
-    "/w14905",
-    "/w14906",
-    "/w14263",
-    "/w44265",
-    "/w14928"
+    "/W4", "/permissive-", "/w14242", "/w14287",
+    "/w14296", "/w14311", "/w14826", "/w44062",
+    "/w44242", "/w14905", "/w14906", "/w14263",
+    "/w44265", "/w14928"
   ],
   "C_Cpp_Runner.enableWarnings": true,
   "C_Cpp_Runner.warningsAsError": false,
   "C_Cpp_Runner.compilerArgs": [],
   "C_Cpp_Runner.linkerArgs": [],
   "C_Cpp_Runner.includePaths": [],
-  "C_Cpp_Runner.includeSearch": [
-    "*",
-    "**/*"
-  ],
+  "C_Cpp_Runner.includeSearch": ["*", "**/*"],
   "C_Cpp_Runner.excludeSearch": [
-    "**/build",
-    "**/build/**",
-    "**/.*",
-    "**/.*/**",
-    "**/.vscode",
-    "**/.vscode/**"
+    "**/build", "**/build/**", "**/.*",
+    "**/.*/**", "**/.vscode", "**/.vscode/**"
   ],
   "C_Cpp_Runner.useAddressSanitizer": false,
   "C_Cpp_Runner.useUndefinedSanitizer": false,

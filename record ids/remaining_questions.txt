@@ -1,0 +1,29 @@
+INTRODUCTION TO DATA STRUCTURE — Remaining Questions
+=====================================================
+
+Completed: Q1, Q2, Q5, Q6, Q7, Q8, Q10, Q12, Q14, Q20  (10 done)
+Remaining: Q3, Q4, Q9, Q11, Q13, Q15, Q16, Q17, Q18, Q19  (10 left)
+
+-----------------------------------------------------
+
+Q9.  Write a program to read a paragraph and count the number of capital
+     letters, small letters, numbers and special characters.
+     -> File: 9.cpp
+
+Q11. Write a program to read a passage and count the number of words,
+     characters, lines, vowels and special characters.
+     -> File: 11.cpp
+
+Q13. Write a program to implement the Towers of Hanoi for n plates.
+     -> File: 13.cpp
+
+Q15. Write a program for implementing binary search.
+     -> File: 15.cpp
+
+Q17. Write a program to implement selection sort.
+     -> File: 17.cpp
+
+Q18. Write a program to read and display a sparse matrix using array
+     representation.
+     -> File: 18.cpp
+
