@@ -4,47 +4,41 @@ using namespace std;
 
 class Student {
 public:
-    int rollNumber;
-    string name;
-    float marks[3];
-    float total;
-    float percentage;
+    int rollno; string name;
+    float marks[3],total=0,percentage;
 
-    void readDetails() {
+    void readetails() {
         cout << "Enter roll number: ";
-        cin >> rollNumber;
+        cin >> rollno;
         cout << "Enter name: ";
-        getline(cin >> ws, name);
-        total = 0;
-        cout << "Enter marks in three subjects: ";
+        cin>>name;
+        cout << "Enter marks in 3 subjects: ";
         for (int i = 0; i < 3; i++) {
-            cin >> marks[i];
-            total += marks[i];
-        }
+            cin >> marks[i];total += marks[i];}
         percentage = total / 3;
     }
 
-    void displayDetails() {
-        cout << "Roll number: " << rollNumber << "\n";
-        cout << "Name: " << name << "\n";
-        cout << "Total marks: " << total << "\n";
-        cout << "Percentage: " << percentage << "%\n";
+    void displaydetails() {
+        cout << "Roll number: " << rollno <<endl;
+        cout << "Name: " << name <<endl;
+        cout << "Total marks: " << total << endl;
+        cout << "Percentage: " << percentage << endl;
     }
 };
 
 int main() {
-    Student students[5];
-    for (int i = 0; i < 5; i++) {
-        cout << "\nStudent " << i + 1 << "\n";
-        students[i].readDetails();
+    Student students[3];            // <-- Changed 5 to 3
+    for (int i = 0; i < 3; i++) {   // <-- Changed 5 to 3
+        cout << "Student " << i + 1 << endl;
+        students[i].readetails();
     }
 
     int highest = 0;
-    for (int i = 1; i < 5; i++)
-        if (students[i].percentage > students[highest].percentage)
-            highest = i;
+    for (int i = 0; i < 2; i++)     // <-- Changed 4 to 2
+        if (students[i].percentage < students[i+1].percentage)
+            highest = i+1;
 
-    cout << "\nStudent with the highest percentage:\n";
-    students[highest].displayDetails();
+    cout << "Student with the highest percentage:\n";
+    students[highest].displaydetails();
     return 0;
-}
+}                   

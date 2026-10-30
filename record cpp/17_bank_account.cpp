@@ -3,61 +3,56 @@
 using namespace std;
 
 class BankAccount {
+
+    int accountno;
+    string name,acctype;
+    double balance = 0;
+
+    void readetails() {
+        cout << "Enter acc no. : "; cin >> accountno;
+        cout << "Enter name: "; cin>>name;
+        cout << "Enter type: "; cin>>acctype;
+        cout << "Enter opening balance: "; cin >> balance;
+    }
 public:
-    int accountNumber;
-    string depositorName;
-    string accountType;
-    double balance;
-
-    void readDetails() {
-        cout << "Enter account number: ";
-        cin >> accountNumber;
-        cout << "Enter depositor name: ";
-        getline(cin >> ws, depositorName);
-        cout << "Enter account type: ";
-        getline(cin, accountType);
-        cout << "Enter opening balance: ";
-        cin >> balance;
-    }
-
-    void deposit(double amount) {
-        if (amount > 0)
-            balance += amount;
+    void deposit(double amt) {
+        if (amt > 0)
+            balance += amt;
         else
-            cout << "Invalid deposit amount.\n";
+            cout << "Invalid  amount ";
     }
 
-    void withdraw(double amount) {
-        if (amount <= 0)
-            cout << "Invalid withdrawal amount.\n";
-        else if (balance - amount < 500)
+    void withdraw(double amt) {
+        if (amt <= 0)
+            cout << "Invalid amount ";
+        else if (balance - amt < 500)
             cout << "Withdrawal not allowed. Keep at least Rs. 500 in the account.\n";
         else
-            balance -= amount;
+            balance -= amt;
     }
 
     void displayDetails() {
-        cout << "Account number: " << accountNumber << "\n";
-        cout << "Depositor name: " << depositorName << "\n";
-        cout << "Account type: " << accountType << "\n";
-        cout << "Balance: Rs. " << balance << "\n";
+        cout << "Acc no: " << accountno <<endl;
+        cout << "Name: " << name << endl;
+        cout << "Account type: " << acc type << endl;
+        cout << "Balance: " << balance << endl;
     }
 };
 
 int main() {
     BankAccount account;
     double amount;
-    account.readDetails();
+    account.readetails();
 
-    cout << "Enter deposit amount: ";
+    cout << "Enter deposit : ";
     cin >> amount;
     account.deposit(amount);
 
-    cout << "Enter withdrawal amount: ";
+    cout << "Enter withdrawal : ";
     cin >> amount;
     account.withdraw(amount);
 
-    cout << "\nAccount details:\n";
+    cout << "Account details:\n";
     account.displayDetails();
     return 0;
 }

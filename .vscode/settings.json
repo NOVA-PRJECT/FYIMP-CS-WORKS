@@ -35,7 +35,7 @@
   "editor.snippetSuggestions": "none",
   "editor.inlineSuggest.enabled": false,
   "editor.parameterHints.enabled": false,
-  "editor.hover.enabled": false,
+  "editor.hover.enabled": "off",
   "editor.codeLens": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
