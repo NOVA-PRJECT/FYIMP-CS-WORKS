@@ -3,33 +3,33 @@ using namespace std;
 
 class Time {
 public:
-    int hours, minutes, seconds;
+    int hours, min, sec;
 
     void readTime() {
         cout << "Enter hours, minutes, and seconds: ";
-        cin >> hours >> minutes >> seconds;
+        cin >> hours >> min >> sec;
     }
 
     Time add(Time other) {
         Time result;
-        result.seconds = seconds + other.seconds;
-        result.minutes = minutes + other.minutes + result.seconds / 60;
-        result.seconds %= 60;
-        result.hours = hours + other.hours + result.minutes / 60;
-        result.minutes %= 60;
+        result.sec = sec + other.sec;
+        result.min = min + other.min + result.sec / 60;
+        result.sec %= 60;
+        result.hours = hours + other.hours + result.min / 60;
+        result.min %= 60;
         return result;
     }
 
     void display() {
-        cout << hours << " hours " << minutes << " minutes " << seconds << " seconds\n";
+        cout << hours << " hours " << min << " minutes " << sec << " seconds";
     }
-};
+}; 
 
 int main() {
     Time first, second, total;
-    cout << "First time:\n";
+    cout << "First time: "<<endl;
     first.readTime();
-    cout << "Second time:\n";
+    cout << "Second time: "<<endl;
     second.readTime();
     total = first.add(second);
     cout << "Sum: ";

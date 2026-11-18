@@ -29,8 +29,8 @@ int main() {
     Box cube(3);
     Box rectangularBox(2, 3, 4);
 
-    cout << "Default box volume: " << defaultBox.volume() << "\n";
-    cout << "Cube volume: " << cube.volume() << "\n";
-    cout << "Three-value box volume: " << rectangularBox.volume() << "\n";
+    cout << "Default box vol: " << defaultBox.volume() << "\n";
+    cout << "Cube vol: " << cube.volume() <<endl;
+    cout << "Rectangled vol: " << rectangularBox.volume();
     return 0;
 }

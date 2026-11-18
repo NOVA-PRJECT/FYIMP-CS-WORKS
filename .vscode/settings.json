@@ -41,8 +41,11 @@
   "editor.acceptSuggestionOnEnter": "off",
   "editor.tabCompletion": "off",
   "C_Cpp.autocomplete": "disabled",
-  "C_Cpp.intelliSenseEngine": "disabled",
-  "C_Cpp.errorSquiggles": "disabled",
+  "C_Cpp.intelliSenseEngine": "default",
+  "C_Cpp.errorSquiggles": "enabled",
+  "clangd.arguments": [
+    "--query-driver=C:/msys64/ucrt64/bin/*"
+  ],
   "github.copilot.enable": {
     "*": false,
     "cpp": false,

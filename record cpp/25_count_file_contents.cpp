@@ -1,28 +1,33 @@
 #include <iostream>
 #include <fstream>
-#include <sstream>
 #include <string>
 using namespace std;
 
 int main() {
     ifstream file("sample.txt");
     if (!file) {
-        cout << "Could not open sample.txt. Run program 24 first or create the file.\n";
+        cout << "Could not open sample.txt." << endl;
         return 0;
     }
 
-    string line, word;
+    string line;
     int characters = 0, words = 0, lines = 0;
+
     while (getline(file, line)) {
         lines++;
-        characters += static_cast<int>(line.length());
-        istringstream lineStream(line);
-        while (lineStream >> word)
-            words++;
+        characters += line.length();
+
+        for (int i = 0; i < line.length(); i++) {
+            if (line[i] != ' ' && (i == 0 || line[i - 1] == ' '))
+                words++;
+        }
     }
 
-    cout << "Characters (excluding line breaks): " << characters << "\n";
-    cout << "Words: " << words << "\n";
-    cout << "Lines: " << lines << "\n";
+    file.close();
+
+    cout << "Characters: " << characters << endl;
+    cout << "Words: " << words << endl;
+    cout << "Lines: " << lines << endl;
+
     return 0;
 }

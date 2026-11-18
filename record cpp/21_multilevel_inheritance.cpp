@@ -3,12 +3,12 @@ using namespace std;
 
 class Student {
 protected:
-    int rollNumber;
+    int rollno;
 
 public:
-    void readRollNumber() {
-        cout << "Enter roll number: ";
-        cin >> rollNumber;
+    void readrollno() {
+        cout << "Enter rollno: ";
+        cin >> rollno;
     }
 };
 
@@ -17,8 +17,8 @@ protected:
     int marks[3];
 
 public:
-    void readMarks() {
-        readRollNumber();
+    void readmarks() {
+        readrollno();
         cout << "Enter marks in three subjects: ";
         for (int i = 0; i < 3; i++)
             cin >> marks[i];
@@ -27,16 +27,16 @@ public:
 
 class Result : public Test {
 public:
-    void displayResult() {
+    void displayresult() {
         int total = marks[0] + marks[1] + marks[2];
-        cout << "Roll number: " << rollNumber << "\n";
+        cout << "Roll number: " << rollno << "\n";
         cout << "Total marks: " << total << "\n";
     }
 };
 
 int main() {
     Result student;
-    student.readMarks();
-    student.displayResult();
+    student.readmarks();
+    student.displayresult();
     return 0;
 }

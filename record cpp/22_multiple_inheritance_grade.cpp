@@ -3,30 +3,30 @@ using namespace std;
 
 class Internal {
 protected:
-    int internalMarks;
+    int intmark;
 
 public:
-    void readInternalMarks() {
+    void readintmark() {
         cout << "Enter internal marks: ";
-        cin >> internalMarks;
+        cin >> intmark;
     }
 };
 
 class External {
 protected:
-    int externalMarks;
+    int extmark;
 
 public:
-    void readExternalMarks() {
+    void readextmark() {
         cout << "Enter external marks: ";
-        cin >> externalMarks;
+        cin >> extmark;
     }
 };
 
 class Final : public Internal, public External {
 public:
-    void displayResult() {
-        int total = internalMarks + externalMarks;
+    void displayresult() {
+        int total = intmark + extmark;
         cout << "Total marks: " << total << "\n";
         if (total >= 80)
             cout << "Grade: A\n";
@@ -41,8 +41,8 @@ public:
 
 int main() {
     Final result;
-    result.readInternalMarks();
-    result.readExternalMarks();
-    result.displayResult();
+    result.readintmark();
+    result.readextmark();
+    result.displayresult();
     return 0;
 }

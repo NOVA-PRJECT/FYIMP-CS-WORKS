@@ -1,31 +1,29 @@
 #include <iostream>
 #include <fstream>
-#include <cctype>
 using namespace std;
 
 int main() {
-    string sourceName, destinationName;
+    string src, dest;
     cout << "Enter source file name: ";
-    cin >> sourceName;
+    cin >> src;
     cout << "Enter destination file name: ";
-    cin >> destinationName;
+    cin >> dest;
 
-    ifstream source(sourceName);
-    if (!source) {
-        cout << "Could not open the source file.\n";
-        return 0;
+    ifstream fin(src);
+    if (!fin) { cout << "Could not open source file." << endl; return 0; }
+
+    ofstream fout(dest);
+    if (!fout) { cout << "Could not create destination file." << endl; return 0; }
+
+    char ch;
+    while (fin.get(ch)) {
+        if (ch >= 'a' && ch <= 'z')
+            ch = ch - 32;
+        fout.put(ch);
     }
 
-    ofstream destination(destinationName);
-    if (!destination) {
-        cout << "Could not create the destination file.\n";
-        return 0;
-    }
-
-    char character;
-    while (source.get(character))
-        destination.put(static_cast<char>(toupper(static_cast<unsigned char>(character))));
-
-    cout << "File copied in uppercase.\n";
+    fin.close();
+    fout.close();
+    cout << "File copied in uppercase." << endl;
     return 0;
 }

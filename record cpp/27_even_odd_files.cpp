@@ -3,31 +3,24 @@
 using namespace std;
 
 int main() {
-    string inputName;
-    cout << "Enter the input file name: ";
-    cin >> inputName;
+    string name;
+    cout << "Enter input file name: ";
+    cin >> name;
 
-    ifstream inputFile(inputName);
-    if (!inputFile) {
-        cout << "Could not open the input file.\n";
-        return 0;
-    }
+    ifstream fin(name);
+    if (!fin) { cout << "Could not open file." << endl; return 0; }
 
-    ofstream evenFile("even.txt");
-    ofstream oddFile("odd.txt");
-    if (!evenFile || !oddFile) {
-        cout << "Could not create the output files.\n";
-        return 0;
-    }
+    ofstream even("even.txt"), odd("odd.txt");
 
-    int number;
-    while (inputFile >> number) {
-        if (number % 2 == 0)
-            evenFile << number << " ";
+    int n;
+    while (fin >> n) {
+        if (n % 2 == 0)
+            even << n << " ";
         else
-            oddFile << number << " ";
+            odd << n << " ";
     }
 
-    cout << "Even numbers written to even.txt and odd numbers written to odd.txt.\n";
+    fin.close(); even.close(); odd.close();
+    cout << "Even numbers written to even.txt, odd to odd.txt." << endl;
     return 0;
 }

@@ -5,7 +5,7 @@ using namespace std;
 double divide(int numerator, int denominator) {
     if (denominator == 0)
         throw runtime_error("Cannot divide by zero.");
-    return static_cast<double>(numerator) / denominator;
+    return (double)numerator / denominator;
 }
 
 int main() {

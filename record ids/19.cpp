@@ -5,7 +5,7 @@ int main(){
     int n;
     cout<<"Enter no. of students : ";
     cin>>n;
-
+ 
     string name[n],temp;
 
     cout<<"Enter name of students\n";

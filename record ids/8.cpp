@@ -31,19 +31,16 @@ int main() {
         }
     }
 
-    for (int i = 0; i < r1; i++) {
-        for (int j = 0; j < c2; j++) {
-            product[i][j] = 0;
-        }
-    }
 
-    for (int i = 0; i < r1; i++) {
-        for (int j = 0; j < c2; j++) {
-            for (int k = 0; k < c1; k++) {
-                product[i][j] += a[i][k] * b[k][j];
-            }
+for (int i = 0; i < r1; i++) {
+    for (int j = 0; j < c2; j++) {
+        product[i][j] = 0;
+        for (int k = 0; k < c1; k++) {
+            product[i][j] += a[i][k] * b[k][j];
         }
     }
+}
+
 
     cout << "\nResultant Matrix after Multiplication (" << r1 << "x" << c2 << "):" << endl;
     for (int i = 0; i < r1; i++) {
